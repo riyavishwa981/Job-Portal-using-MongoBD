@@ -1,0 +1,2 @@
+# Job-Portal-using-MongoBD
+I am about to graduate and I know how difficult it is to find a Job. I have always wanted to create a Job Portal which helps graduates like me to find a Job, that matches their skillset and helps to move their Career further. In the current Job Market, there is a mafia of Consultancy Services which dupe the Students and Graduates , promising them Job So, me myself Riya Vishwakarma with my partner Ujwal Yadav have created this Minimalistic-Simplified Project that would solve this problem by connecting Employers and Employees
