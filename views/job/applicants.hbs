@@ -1,0 +1,31 @@
+<h2>List Of Applicants</h2>
+<table class="table table-striped">
+<thead> 
+    <tr>
+        <th>Job</th>
+        <th>Company</th>
+        <th>Type</th>
+        <th>Location</th>
+        <th>Applicant Name</th>
+        <th>Applicant Email</th>
+        
+    </tr>
+</thead>
+<tbody>
+    {{#each list}}
+    <tr style=" overflow :hidden ; justify-content:space-between">
+        <td style="overflow :hidden ; width:100px">{{this.jobb}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.company_name}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.j_type}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.company_location}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.app_name}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.app_email}}</td> 
+        <td>
+            <a href="/job/mailacc/{{this.app_email}}" style="color: rgb(13, 167, 21);"><i class="fa fa-check fa-lg" aria-hidden="true" style="cursor: pointer; padding-right:30px;"></i></a>
+            <a href="/job/mailrej/{{this.app_email}}" style="color: rgb(214, 31, 31);"><i class="fa fa-times fa-lg" aria-hidden="true" style="cursor: pointer;"></i></a>
+        </td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
+

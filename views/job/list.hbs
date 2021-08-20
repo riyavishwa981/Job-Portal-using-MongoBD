@@ -1,0 +1,35 @@
+<div style="display: flex; justify-content:space-between">
+<h2>List Of Jobs </h2> <a class="btn btn-secondary" href="/job" style="background-color: rgb(42, 153, 218);"><i class="fa fa-plus"></i>  Create New </a>
+</div>
+<table class="table table-striped">
+<thead> 
+    <tr>
+        <th>Job</th>
+        <th>Description</th>
+        <th>Company</th>
+        <th>Type</th>
+        <th>Location</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>Salary</th>
+    </tr>
+</thead>
+<tbody>
+    {{#each list}}
+    <tr style=" overflow :hidden ; justify-content:space-between">
+        <td style="overflow :hidden ; width:100px">{{this.jobb}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.job_description}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.company_name}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.j_type}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.company_location}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.company_email_id}}</td> 
+        <td style="overflow :hidden ; width:100px">{{this.company_contact}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.salary}}</td>
+        <td>
+            <a href="/job/update/{{this._id}}" style="color:black;"><i class="fa fa-pencil fa-lg" aria-hidden="true" style="cursor: pointer; padding-right:10px;"></i></a>
+            <a href="/job/delete/{{this._id}}" onclick="return confirm('Are you sure you want to delete this record ? ')" style="color: rgb(0, 0, 0);"><i class="fa fa-trash fa-lg" aria-hidden="true" style="cursor: pointer;"></i></a>
+        </td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>

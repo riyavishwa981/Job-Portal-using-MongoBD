@@ -1,0 +1,30 @@
+<div style="display: inline-flex; justify-content:space-between;">
+<h3>Hello {{a_id.fullname}} you have applied for {{j_id.jobb}} at {{j_id.company_name}}</h3>
+<i class="fa fa-check fa-lg" aria-hidden="true" style="padding-top:12px; padding-left:20px; color:rgb(25, 199, 25)"></i>
+</div>
+<br><br>
+<h2>List Of Applicantions</h2>
+<table class="table table-striped">
+<thead> 
+    <tr>
+        <th>Job</th>
+        <th>Company</th>
+        <th>Type</th>
+        <th>Location</th>
+        
+    </tr>
+</thead>
+<tbody>
+    {{#each list}}
+    <tr style=" overflow :hidden ; justify-content:space-between">
+        <td style="overflow :hidden ; width:100px">{{this.jobb}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.company_name}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.j_type}}</td>
+        <td style="overflow :hidden ; width:100px">{{this.company_location}}</td>
+    
+    </tr>
+    {{/each}}
+</tbody>
+</table>
+
+

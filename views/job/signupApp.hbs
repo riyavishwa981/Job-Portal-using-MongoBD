@@ -1,0 +1,46 @@
+
+
+<h3>{{viewTitle}}</h3>
+<form action="/job/signup" method= "POST" autocomplete="off">
+<input type="hidden" name="_id">
+    <div class="form-group">
+    <label for="">Fullname</label>
+    <input type="text" class="form-control" name="fullname" placeholder="Fullname">
+  </div>
+   <div class="form-group">
+    <label for="">Date of Birth</label>
+    <input type="text" class="form-control" name="dob" placeholder="DOB">
+  </div>
+   <div class="form-group">
+    <label for="">College</label>
+    <input type="text" class="form-control" name="college" placeholder="College">
+  </div>
+  <div class="form-row" >
+   <div class="form-group col-md-6">
+    <label for="">Experience</label>
+    <input type="text" class="form-control" name="experience" placeholder="Experience">
+  </div>
+   <div class="form-group col-md-6">
+    <label for="">Field</label>
+    <input type="text" class="form-control" name="field" placeholder="Field">
+  </div>
+  </div>
+  <div class="form-row" >
+   <div class="form-group col-md-6">
+    <label for="">Contact</label>
+    <input type="text" class="form-control" name="contact" placeholder="Contact">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="">Email Id</label>
+    <input type="email" class="form-control" name="email" placeholder="Email">
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="">About You</label>
+    <textarea name="bio" id="" cols="30" rows="7" placeholder="Bio" class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+      <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>  Submit</button>
+      {{!-- <a class="btn btn-secondary" href="/"><i class="fa fa-list-alt"></i> Login</a> --}}
+  </div>
+</form>
